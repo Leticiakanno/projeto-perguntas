@@ -10,11 +10,11 @@ const perguntas = [
        enunciado: "qual seria sua reação se todo o material fisico (material de estudo) fosse substituído por apostilas virtuais, qual seria sua reação?",
        alternativas: [
            {
-               texto: "Isso é assustador!",
+               texto: "Ieu iria amar isso!",
                afirmacao: "afirmação"
            },
            {
-               texto: "Isso é horrivel!",
+               texto: "Isso é terrível!",
                afirmacao: "afirmação"
            }
        ]
