@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Ao se deparar com uma nova tecnologia avançada, capaz de responder todas as suas perguntas e criar imagens e áudios ultra-realistas, qual foi sua primeira reação?",
+        enunciado: "Você está ouvindo uma nova música que acaba de ser lançada. Qual é a sua primeira reação?",
         alternativas: [
             {
-                texto: "Isso é impressionante!",
-                afirmacao: "Ficou fascinado com o potencial da tecnologia e quer explorar como ela pode melhorar a vida diária."
+                texto: "Adoro a batida!",
+                afirmacao: "Você é apaixonado por ritmos envolventes."
             },
             {
-                texto: "Isso é perturbador!",
-                afirmacao: "Inicialmente, sentiu receio em relação ao que essa tecnologia poderia significar."
+                texto: "A letra é incrível!",
+                afirmacao: "Você presta atenção nas letras e se conecta com elas."
             }
         ]
     },
     {
-        enunciado: "Após aprender sobre Inteligência Artificial na escola, sua professora de tecnologia pede que você escreva um trabalho sobre seu uso em sala de aula. Qual abordagem você escolhe?",
+        enunciado: "Um amigo te convida para um show ao vivo de sua banda favorita. Como você responde?",
         alternativas: [
             {
-                texto: "Utiliza ferramentas de busca baseadas em IA para encontrar informações relevantes e explicar de forma acessível.",
-                afirmacao: "Usou IA para obter informações úteis e facilitar a compreensão do tema."
+                texto: "Claro, eu amo shows ao vivo!",
+                afirmacao: "Você adora a energia dos shows ao vivo e a conexão com os artistas."
             },
             {
-                texto: "Baseia seu trabalho em discussões com colegas e pesquisa pessoal, sem depender diretamente da IA.",
-                afirmacao: "Sentiu-se mais confortável usando seus próprios recursos para escrever o trabalho."
+                texto: "Prefiro ouvir as músicas em casa.",
+                afirmacao: "Você prefere a tranquilidade e o conforto de ouvir música em casa."
             }
         ]
     },
     {
-        enunciado: "Durante um debate sobre o impacto da IA no futuro do trabalho, qual é sua posição?",
+        enunciado: "Você tem a oportunidade de aprender a tocar um novo instrumento musical. Qual você escolhe?",
         alternativas: [
             {
-                texto: "Defende que a IA pode criar novas oportunidades de emprego e aprimorar habilidades humanas.",
-                afirmacao: "Está impulsionando a inovação em IA e busca abrir novos caminhos profissionais com essa tecnologia."
+                texto: "Guitarra, para tocar solos incríveis!",
+                afirmacao: "Você quer aprender guitarra para criar solos memoráveis."
             },
             {
-                texto: "Preocupa-se com o impacto negativo da IA na perda de empregos e defende a proteção dos trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou-o a criar um grupo de estudo sobre o uso ético da IA."
+                texto: "Piano, pela versatilidade.",
+                afirmacao: "Você escolhe o piano pela sua versatilidade em diferentes estilos musicais."
             }
         ]
     },
     {
-        enunciado: "Após um debate, você precisa criar uma imagem que represente sua visão sobre a IA. Como você procede?",
+        enunciado: "Você está criando uma playlist para uma festa. Que tipo de música você inclui?",
         alternativas: [
             {
-                texto: "Cria uma imagem usando software tradicional de design, como o Paint.",
-                afirmacao: "Percebeu que muitas pessoas ainda não dominam ferramentas digitais e decidiu compartilhar seus conhecimentos."
+                texto: "Músicas animadas e dançantes.",
+                afirmacao: "Sua playlist está cheia de músicas que fazem todos dançarem."
             },
             {
-                texto: "Cria uma imagem usando um gerador de imagens baseado em IA.",
-                afirmacao: "Acelerou a criação de trabalhos usando geradores de imagem e começou a ensinar outros a usar essas ferramentas."
+                texto: "Músicas calmas e relaxantes.",
+                afirmacao: "Sua playlist tem músicas que ajudam a criar um ambiente relaxante."
             }
         ]
     },
     {
-        enunciado: "Em um trabalho de biologia em grupo, descobre que um membro usou IA para produzir o texto. O que você faz?",
+        enunciado: "Você descobre um novo artista no streaming. O que faz em seguida?",
         alternativas: [
             {
-                texto: "Acha aceitável usar o texto gerado pela IA, pois contribuiu com os comandos para sua criação.",
-                afirmacao: "Infelizmente, começou a depender demais da IA para todas as tarefas, perdendo parte de sua autonomia."
+                texto: "Explora todo o álbum.",
+                afirmacao: "Você gosta de ouvir o álbum inteiro para entender o trabalho do artista."
             },
             {
-                texto: "Revisa o trabalho para incluir suas perspectivas pessoais e garantir originalidade.",
-                afirmacao: "Entende que a IA reflete orientações predefinidas e que é essencial contribuir com ideias pessoais para um trabalho autêntico."
+                texto: "Adiciona algumas músicas na sua playlist.",
+                afirmacao: "Você seleciona suas faixas favoritas para adicionar à sua playlist."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Seu perfil musical é...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
